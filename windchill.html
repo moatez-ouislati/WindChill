@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wind Chill Calculator</title>
+    <script src="javascript/windchill.js"></script>
+    <link rel="stylesheet" href="style/windchill.css">
+</head>
+<body>
+    <section>
+        <h3>Wind Chill Calculation</h3>
+        <form action="javascript:void(0);">
+            <label>Input Temperature (°C):</label>
+            <input type="number" id="temperature" name="temperature" placeholder="Temperature" required>
+
+            <label>Input Wind Speed:</label>
+            <input type="number" id="windspeed" name="windspeed" placeholder="Wind Speed" required>
+
+            <label for="unit">Select Unit:</label>
+            <select id="unit" name="unit">
+                <option value="kmh">km/h</option>
+                <option value="mph">mph</option>
+            </select>
+
+            <input type="button" value="Calculate" onclick="calculateWindChill()">
+
+            <p id="wci">Wind Chill Index will be displayed here.</p>
+        </form>
+    </section>
+    
+</body>
+
+</html>
